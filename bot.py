@@ -28,7 +28,7 @@ async def start(event):
   await event.reply("**Zion Tag Bot**, Grup veya kanaldaki neredeyse tüm üyelerden bahsedebilirim ★\nDaha fazla bilgi için **/help**'i tıklayın.",
                     buttons=(
                       [Button.url('🌟 Beni Bir Gruba Ekle', 'https://t.me/ZionTagBot?startgroup=a'),
-                      Button.url('📣 Support', 'https://t.me/Piramidasohbet'),
+                      Button.url('📣 Support', 'https://t.me/zionteam'),
                       Button.url('🚀 Sahibim', 'https://t.me/Roxy_Boss')]
                     ),
                     link_preview=False
@@ -39,7 +39,7 @@ async def help(event):
   await event.reply(helptext,
                     buttons=(
                       [Button.url('🌟 Beni Bir Gruba Ekle', 'https://t.me/ZionTagBot?startgroup=a'),
-                       Button.url('📣 Support', 'https://t.me/piramidasohbet'),
+                       Button.url('📣 Support', 'https://t.me/zionteam'),
                       Button.url('🚀 Sahibim', 'https://t.me/Roxy_Boss')]
                     ),
                     link_preview=False

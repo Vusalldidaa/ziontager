@@ -4,15 +4,15 @@
   "description": "Lounge tagger bot sıze ucretsız uyelerınızı etıketleyen bı bottur.",
   "env": {
     "TOKEN": {
-      "description": "5071537588:AAGwNJk0vp3fzwmdN7eJFtrmjZfyqyZs33U",
+      "description": "bot token girin.",
       "value": ""
     },
     "APP_ID": {
-      "description": "4967403",
+      "description": "@otomytelegrambot dan api hash api id alınız.",
       "value": ""
     },
     "API_HASH": {
-      "description": "3290586984b814b9f10d31a83780d1aa",
+      "description": "@otomytelegrambot dan api hash api id alınız.",
       "value": ""
     }
   },

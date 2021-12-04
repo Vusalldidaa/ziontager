@@ -17,7 +17,7 @@ client = TelegramClient('client', api_id, api_hash).start(bot_token=bot_token)
 
 anlik_calisan = []
 
-@client.on(events.NewMessage(pattern='^(?i)/cancel'))
+@client.on(events.NewMessage(pattern='^(?i)/dayan'))
 async def cancel(event):
   global anlik_calisan
   anlik_calisan.remove(event.chat_id)
@@ -28,25 +28,25 @@ async def start(event):
   await event.reply("**Oscar Tag Bot**, Qrupda və ya kanalda demək olar ki, istənilən üzvü qeyd edə bilərəm ★\nƏtraflı məlumat üçün **/help** üzərinə klikləyin.",
                     buttons=(
                       [Button.url('🌟 Meni Bir Gruba Ekle', 'https://t.me/OscarTagBot?startgroup=a'),
-                      Button.url('📣 Support', 'https://t.me/OSCAR_sohbet'),
+                      Button.url('📣 Sohbet Qrupumuz', 'https://t.me/OSCAR_sohbet'),
                       Button.url('🧑‍💻 Sahibim', 'https://t.me/Roxy_Boss')]
                     ),
                     link_preview=False
                    )
 @client.on(events.NewMessage(pattern="^/help$"))
 async def help(event):
-  helptext = "**Oscar Tag botunun Yardım Menyu**\n\nƏmr: /all \n Bu emri başqalarına söylemek istediyiniz metnle birlikdw istifade ede bilersiniz.  \n`Nümune: /all sabahınız xeyir!` \nBu emrden cavab olaraq istifade ede bilərsiniz.  istənilən mesaj Bot istifadəçiləri cavablandırılan mesaja tag edecek /cancel- bu emrle prosesi dayandıra bilərsiniz @piramidasohbet Söhbet Kanalımıza gelmeyi unutmayın"
+  helptext = "**Oscar Tag botunun Yardım Menyu**\n\nƏmr: /all \n Bu emri başqalarına söylemek istediyiniz metnle birlikdw istifade ede bilersiniz.  \n`Nümune: /all sabahınız xeyir!` \nBu emrden cavab olaraq istifade ede bilərsiniz.  istənilən mesaj Bot istifadəçiləri cavablandırılan mesaja tag edecek /dayan- bu emrle prosesi dayandıra bilərsiniz @piramidasohbet Söhbet Kanalımıza gelmeyi unutmayın"
   await event.reply(helptext,
                     buttons=(
                       [Button.url('🌟 Meni Bir Gruba Ekle', 'https://t.me/OscarTagBot?startgroup=a'),
-                       Button.url('📣 Support', 'https://t.me/OSCAR_sohbet'),
+                       Button.url('📣 Sohbet Qrupumuz', 'https://t.me/OSCAR_sohbet'),
                       Button.url('🧑‍💻 Sahibim', 'https://t.me/Roxy_Boss')]
                     ),
                     link_preview=False
                    )
 
 
-@client.on(events.NewMessage(pattern="^/all ?(.*)"))
+@client.on(events.NewMessage(pattern="^/tag ?(.*)"))
 async def mentionall(event):
   global anlik_calisan
   if event.is_private:

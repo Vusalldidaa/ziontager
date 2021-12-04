@@ -104,42 +104,7 @@ async def mentionall(event):
         await asyncio.sleep(2)
         usrnum = 0
         usrtxt = ""
-emj = ['😇','🥰','😎','🤩','😍','👾','🤡','🥳','😻','😼','😽','💋','👸','🤴','🎅🏻','🤶','🧞‍♀️','🧞','🧞‍♂️','🧜‍♀️','🧜','🧚‍♀️','🧚','👑','💍','🕶','🐶','🐱','🐭','🐹','🐰','🦊','🐻','🐼','🐨','🐯','🦁','🐮','🐷','🐽','🐸','🐵','🙈','🙉','🙊','🐒','🐣','🐥','🦅','🐝','🦋','🐞','💐','🌹','🥀','🌺','🌸','🌼','🌻','⭐️','🌟','✨','⚡️','🔥','🌈','☃️','🍫','💅','🐺','🍫','🍕','☕','🧸','🦅','👩‍🦰','🎮','☄️','🌙','🦕','👨🏻‍✈️','🥶','🍿','👀','💀','💟','♥️','💘','💝','💗','💙','💛','🖤','🤑','⚡','😈','🤡','🎊','🔥','😼','💤','✊','👩‍🎨','🧕','🌼','💐','🌹','🥀','🌷','🌺','🌸','🏵️','🌻','🍂','🍁','🌾','🌱','🌿','🍃','☘️','🍀','🌵','🌴','🌳','🌲','🏞️','🌪️','☃️','⛄','❄️','🏔️','🌋','🙋','🤶','👩‍💼','🧓','🧔','💃','🕺','👩‍🦰','🪐','🦄','🐢','🐁','🐤','🐣','🐥','🦉','🐓','🕊️','🦢','🦩','🦈','🐬','🐋','🐳','🐟','🐠','🦚','🐡','🦐','🦞','🦀','🦑','🐙','🦂','🕷️','🕸️','🐜','🦗','🦟','🐝','🐞','🐾','🍓','🍒','🍎','🍉','🍊','🥭','🍍','🍋','🍇','🥝','🍐','🥥','🌶️','🍄','🍔','🧆','🥙','🦞','🍧','🍨','🍦','🥧','🍰','🍮','🎂','🧁','🍭','🍬','🍩','🍺','🍻','🥂','🍾','🍷']
 
-@aykhan(outgoing=True, pattern="^/etag.*")
-async def emtag(event):
-      if event.fwd_from or FlagContainer.is_active:
-          return
-      try:
-          FlagContainer.is_active = True
-  
-          sozemj = None
-          aykhan4 = event.message.text.split(" ", 1)
-          if len(aykhan4) > 1:
-              sozemj = aykhan4[1]
-  
-          chat = await event.get_input_chat()
-          await event.delete()
-  
-          tags = list(map(lambda m: f"[{random.choice(emj)}](tg://user?id={m.id})", await event.client.get_participants(chat)))
-          current_pack = []
-          async for participant in event.client.iter_participants(chat):
-              if not FlagContainer.is_active:
-                  break
-  
-              current_pack.append(participant)
-  
-              if len(current_pack) == 5: 
-                  tags = list(map(lambda m: f"[{random.choice(emj)}](tg://user?id={m.id})", current_pack))
-                  current_pack = []
-  
-                  if sozemj:
-                      tags.append(sozemj)
-  
-                  await event.client.send_message(event.chat_id, " ".join(tags))
-                  await asyncio.sleep(0.5) 
-      finally:
-          FlagContainer.is_active = False
 
 print(">> Bot isdeyir merak eleme 🚀 @Roxy_Boss bilgi alabilersen <<")
 client.run_until_disconnected()

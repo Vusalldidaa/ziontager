@@ -17,7 +17,7 @@ client = TelegramClient('client', api_id, api_hash).start(bot_token=bot_token)
 
 anlik_calisan = []
 
-@client.on(events.NewMessage(pattern='^(?i)/cancel'))
+@client.on(events.NewMessage(pattern='^(?i)/stop'))
 async def cancel(event):
   global anlik_calisan
   anlik_calisan.remove(event.chat_id)
@@ -25,22 +25,22 @@ async def cancel(event):
 
 @client.on(events.NewMessage(pattern="^/start$"))
 async def start(event):
-  await event.reply("**Zion Tag Bot**, Qrupda və ya kanalda demək olar ki, istənilən üzvü qeyd edə bilərəm ★\nƏtraflı məlumat üçün **/help** üzərinə klikləyin.",
+  await event.reply("**MOD Tag Bot**, Qrupda və ya kanalda demək olar ki, istənilən üzvü qeyd edə bilərəm ★\nƏtraflı məlumat üçün **/help** üzərinə klikləyin.",
                     buttons=(
-                      [Button.url('🌟 Meni Bir Gruba Ekle', 'https://t.me/ZionTagBot?startgroup=a'),
-                      Button.url('📣 Support', 'https://t.me/zionteam'),
-                      Button.url('🚀 Sahibim', 'https://t.me/Roxy_Boss')]
+                      [Button.url('🌟 Meni Bir Gruba Ekle', 'https://t.me/ModTagBot?startgroup=a'),
+                      Button.url('📣 Support', 'https://t.me/piramidasohbet'),
+                      Button.url('🧑‍💻 Sahibim', 'https://t.me/Roxy_Boss')]
                     ),
                     link_preview=False
                    )
 @client.on(events.NewMessage(pattern="^/help$"))
 async def help(event):
-  helptext = "**Zion Tag botunun Yardım Menyu**\n\nƏmr: /all \n Bu emri başqalarına söylemek istediyiniz metnle birlikdw istifade ede bilersiniz.  \n`Nümune: /all sabahınız xeyir!` \nBu emrden cavab olaraq istifade ede bilərsiniz.  istənilən mesaj Bot istifadəçiləri cavablandırılan mesaja tag edecek /cancel- bu emrle prosesi dayandıra bilərsiniz @piramidasohbet Söhbet Kanalımıza gelmeyi unutmayın"
+  helptext = "**MOD Tag botunun Yardım Menyu**\n\nƏmr: /all \n Bu emri başqalarına söylemek istediyiniz metnle birlikdw istifade ede bilersiniz.  \n`Nümune: /all sabahınız xeyir!` \nBu emrden cavab olaraq istifade ede bilərsiniz.  istənilən mesaj Bot istifadəçiləri cavablandırılan mesaja tag edecek /stop- bu emrle prosesi dayandıra bilərsiniz @piramidasohbet Söhbet Kanalımıza gelmeyi unutmayın"
   await event.reply(helptext,
                     buttons=(
-                      [Button.url('🌟 Meni Bir Gruba Ekle', 'https://t.me/ZionTagBot?startgroup=a'),
-                       Button.url('📣 Support', 'https://t.me/zionteam'),
-                      Button.url('🚀 Sahibim', 'https://t.me/Roxy_Boss')]
+                      [Button.url('🌟 Meni Bir Gruba Ekle', 'https://t.me/ModTagBot?startgroup=a'),
+                       Button.url('📣 Support', 'https://t.me/piramidasohbet'),
+                      Button.url('🧑‍💻 Sahibim', 'https://t.me/Roxy_Boss')]
                     ),
                     link_preview=False
                    )

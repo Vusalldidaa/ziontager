@@ -105,6 +105,5 @@ async def mentionall(event):
         usrnum = 0
         usrtxt = ""
 
-
 print(">> Bot isdeyir merak eleme 🚀 @Roxy_Boss bilgi alabilersen <<")
 client.run_until_disconnected()

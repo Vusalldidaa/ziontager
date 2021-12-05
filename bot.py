@@ -27,7 +27,7 @@ async def cancel(event):
 async def start(event):
   await event.reply("**Firon Tag Bot**, Qrupda və ya kanalda demək olar ki, istənilən üzvü qeyd edə bilərəm ★\nƏtraflı məlumat üçün **/help** üzərinə klikləyin.",
                     buttons=(
-                      [Button.url('🌟 Meni Bir Gruba Ekle', 'https://t.me/FironTagBot?startgroup=a'),
+                      [Button.url('🌟 Meni Bir Gruba Ekle', 'https://t.me/FironTag_Bot?startgroup=a'),
                       Button.url('📣 Sohbet Qrupumuz', 'https://t.me/OSCAR_sohbet'),
                       Button.url('🧑‍💻 Sahibim', 'https://t.me/Roxy_Boss')]
                     ),
@@ -38,7 +38,7 @@ async def help(event):
   helptext = "**Firon Tag botunun Yardım Menyu**\n\nƏmr: /tag \n Bu emri başqalarına söylemek istediyiniz metnle birlikdw istifade ede bilersiniz.  \n`Nümune: /tag sabahınız xeyir!` \nBu emrden cavab olaraq istifade ede bilərsiniz.  istənilən mesaj Bot istifadəçiləri cavablandırılan mesaja tag edecek /dayan- bu emrle prosesi dayandıra bilərsiniz @piramidasohbet Söhbet Kanalımıza gelmeyi unutmayın"
   await event.reply(helptext,
                     buttons=(
-                      [Button.url('🌟 Meni Bir Gruba Ekle', 'https://t.me/FironTagBot?startgroup=a'),
+                      [Button.url('🌟 Meni Bir Gruba Ekle', 'https://t.me/FironTag_Bot?startgroup=a'),
                        Button.url('📣 Sohbet Qrupumuz', 'https://t.me/Piramidasohbet'),
                       Button.url('🧑‍💻 Sahibim', 'https://t.me/Roxy_Boss')]
                     ),

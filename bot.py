@@ -25,7 +25,7 @@ async def cancel(event):
 
 @client.on(events.NewMessage(pattern="^/start$"))
 async def start(event):
-  await event.reply("**Firon Tag Bot**, Qrupda və ya kanalda demək olar ki, istənilən üzvü qeyd edə bilərəm ★\nƏtraflı məlumat üçün **/help** üzərinə klikləyin.",
+  await event.reply("**Rc Tag Bot**, Qrupda və ya kanalda demək olar ki, istənilən üzvü qeyd edə bilərəm ★\nƏtraflı məlumat üçün **/help** üzərinə klikləyin.",
                     buttons=(
                       [Button.url('🌟 Meni Bir Gruba Ekle', 'https://t.me/RcTag_Bot?startgroup=a'),
                       Button.url('📣 Sohbet Qrupumuz', 'https://t.me/OSCAR_sohbet'),

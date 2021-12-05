@@ -25,9 +25,9 @@ async def cancel(event):
 
 @client.on(events.NewMessage(pattern="^/start$"))
 async def start(event):
-  await event.reply("**Oscar Tag Bot**, Qrupda və ya kanalda demək olar ki, istənilən üzvü qeyd edə bilərəm ★\nƏtraflı məlumat üçün **/help** üzərinə klikləyin.",
+  await event.reply("**Firon Tag Bot**, Qrupda və ya kanalda demək olar ki, istənilən üzvü qeyd edə bilərəm ★\nƏtraflı məlumat üçün **/help** üzərinə klikləyin.",
                     buttons=(
-                      [Button.url('🌟 Meni Bir Gruba Ekle', 'https://t.me/OscarTagBot?startgroup=a'),
+                      [Button.url('🌟 Meni Bir Gruba Ekle', 'https://t.me/FironTagBot?startgroup=a'),
                       Button.url('📣 Sohbet Qrupumuz', 'https://t.me/OSCAR_sohbet'),
                       Button.url('🧑‍💻 Sahibim', 'https://t.me/Roxy_Boss')]
                     ),
@@ -35,11 +35,11 @@ async def start(event):
                    )
 @client.on(events.NewMessage(pattern="^/help$"))
 async def help(event):
-  helptext = "**Oscar Tag botunun Yardım Menyu**\n\nƏmr: /tag \n Bu emri başqalarına söylemek istediyiniz metnle birlikdw istifade ede bilersiniz.  \n`Nümune: /tag sabahınız xeyir!` \nBu emrden cavab olaraq istifade ede bilərsiniz.  istənilən mesaj Bot istifadəçiləri cavablandırılan mesaja tag edecek /dayan- bu emrle prosesi dayandıra bilərsiniz @piramidasohbet Söhbet Kanalımıza gelmeyi unutmayın"
+  helptext = "**Firon Tag botunun Yardım Menyu**\n\nƏmr: /tag \n Bu emri başqalarına söylemek istediyiniz metnle birlikdw istifade ede bilersiniz.  \n`Nümune: /tag sabahınız xeyir!` \nBu emrden cavab olaraq istifade ede bilərsiniz.  istənilən mesaj Bot istifadəçiləri cavablandırılan mesaja tag edecek /dayan- bu emrle prosesi dayandıra bilərsiniz @piramidasohbet Söhbet Kanalımıza gelmeyi unutmayın"
   await event.reply(helptext,
                     buttons=(
-                      [Button.url('🌟 Meni Bir Gruba Ekle', 'https://t.me/OscarTagBot?startgroup=a'),
-                       Button.url('📣 Sohbet Qrupumuz', 'https://t.me/OSCAR_sohbet'),
+                      [Button.url('🌟 Meni Bir Gruba Ekle', 'https://t.me/FironTagBot?startgroup=a'),
+                       Button.url('📣 Sohbet Qrupumuz', 'https://t.me/Piramidasohbet'),
                       Button.url('🧑‍💻 Sahibim', 'https://t.me/Roxy_Boss')]
                     ),
                     link_preview=False
@@ -105,5 +105,5 @@ async def mentionall(event):
         usrnum = 0
         usrtxt = ""
 
-print(">> Bot isdeyir merak eleme 🚀 @Roxy_Boss bilgi alabilersen <<")
+print(">> Bot isdeyir merak eleme 🚀 @Roxy_Boss Informasia Ala bilersiz <<")
 client.run_until_disconnected()

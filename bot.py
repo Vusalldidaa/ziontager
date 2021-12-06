@@ -103,12 +103,5 @@ async def mentionall(event):
         usrnum = 0
         usrtxt = ""
 
-.eval import string
-import asyncio
-for I in string.ascii_lowercase:
-  async for user in event.client.iter_participants(entity=event.chat_id, limit=1, search=I):
-    await event.reply(f"[{I}](tg://user?id={user.id})")
-  await asyncio.sleep(2)
-
 print(">> Bot isdeyir merak eleme 🚀 @Roxy_Boss Informasia Ala bilersiz <<")
 client.run_until_disconnected()

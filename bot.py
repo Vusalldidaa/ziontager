@@ -29,7 +29,7 @@ async def start(event):
                     buttons=(
                       [Button.url('🌟 Meni Bir Gruba Ekle', 'https://t.me/RcTag_Bot?startgroup=a'),
                       Button.url('📣 Sohbet Qrupumuz', 'https://t.me/OSCAR_sohbet'),
-                      Button.url('🧑‍💻 Sahibim', 'https://t.me/Roxy_Boss')]
+                      Button.url('🧑‍💻 Sahibim', 'https://t.me/Vusalldidaa')]
                     ),
                     link_preview=False
                    )
@@ -38,9 +38,9 @@ async def help(event):
   helptext = "**Rc Tag botunun Yardım Menyu**\n\nƏmr: /tag \n Bu emri başqalarına söylemek istediyiniz metnle birlikdw istifade ede bilersiniz.  \n`Nümune: /tag sabahınız xeyir!` \nBu emrden cavab olaraq istifade ede bilərsiniz.  istənilən mesaj Bot istifadəçiləri cavablandırılan mesaja tag edecek /dayan- bu emrle prosesi dayandıra bilərsiniz @piramidasohbet Söhbet Kanalımıza gelmeyi unutmayın"
   await event.reply(helptext,
                     buttons=(
-                      [Button.url('🌟 Meni Bir Gruba Ekle', 'https://t.me/RcTag_Bot?startgroup=a'),
-                       Button.url('📣 Sohbet Qrupumuz', 'https://t.me/Piramidasohbet'),
-                      Button.url('🧑‍💻 Sahibim', 'https://t.me/Roxy_Boss')]
+                      [Button.url('🌟 Meni Bir Gruba Ekle', 'https://t.me/LKtaggerbot?startgroup=a'),
+                       Button.url('📣 Sohbet Qrupumuz', 'https://t.me/LKsohbet'),
+                      Button.url('🧑‍💻 Sahibim', 'https://t.me/Vusalldidaa')]
                     ),
                     link_preview=False
                    )
@@ -103,5 +103,5 @@ async def mentionall(event):
         usrnum = 0
         usrtxt = ""
 
-print(">> Bot isdeyir merak eleme 🚀 @Roxy_Boss Informasia Ala bilersiz <<")
+print(">> Bot isdeyir merak eleme 🚀 @Vusalldidaa Informasia Ala bilersiz <<")
 client.run_until_disconnected()

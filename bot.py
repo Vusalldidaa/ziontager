@@ -101,5 +101,5 @@ async def mentionall(event):
         usrnum = 0
         usrtxt = ""
 
-print(">> Flack Tagger BoT işləyir 🚀 @Roxy_Boss dan informasia Ala bilərsiz <<")
+print(">> Rc Tagger BoT işləyir 🚀 @Roxy_Boss dan informasia Ala bilərsiz <<")
 client.run_until_disconnected()

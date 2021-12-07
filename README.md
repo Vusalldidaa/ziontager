@@ -1,3 +1,3 @@
-# bu bot qurupunuzda 100 istifadəçini tağ edə bilər
+# bu bot qurupunuzda 10000 istifadəçini tağ edə bilər
 
 

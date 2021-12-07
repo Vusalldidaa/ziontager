@@ -27,9 +27,8 @@ async def cancel(event):
 async def start(event):
   await event.reply("**@FlackTaggerBoT**, Qrupda və ya kanalda demək olar ki, istənilən üzvü qeyd edə bilərəm ★\nƏtraflı məlumat üçün **/help** üzərinə klikləyin.",
                     buttons=(
-                      [Button.url('🌟 Meni Bir Gruba Ekle', 'https://t.me/FlackTaggerBoT?startgroup=a'),
-                      Button.url('📣 Support', 'https://t.me/@FlackResmi'),
-                      Button.url('🧑‍💻 Sahibim', 'https://t.me/Roxy_Boss')]
+                      [Button.url('➕ Məni Bir Qurupa Əlavə Et ➕', 'https://t.me/FlackTaggerBoT?startgroup=a'),
+                       Button.url('🧑‍💻 Sahibim', 'https://t.me/Eyoydu')]
                     ),
                     link_preview=False
                    )
@@ -38,9 +37,8 @@ async def help(event):
   helptext = "** FlackTaggerBoT Yardım Menyu**\n\nƏmr: /tag \n Bu emri başqalarına söylemek istediyiniz metnle birlikdw istifade ede bilersiniz.  \n`Nümune: /tag sabahınız xeyir!` \nBu emrden cavab olaraq istifade ede bilərsiniz.  istənilən mesaj Bot istifadəçiləri cavablandırılan mesaja tag edecek /dayan- bu emrle prosesi dayandıra bilərsiniz @piramidasohbet Söhbet Kanalımıza gelmeyi unutmayın"
   await event.reply(helptext,
                     buttons=(
-                      [Button.url('🌟 Meni Bir Gruba Ekle', 'https://t.me/FlackResmi?startgroup=a'),
-                       Button.url('📣 Support', 'https://t.me/FlackResmi'),
-                      Button.url('🧑‍💻 Sahibim', 'https://t.me/Roxy_Boss')]
+                      [Button.url('➕ Məni Bir Qurupa Əlavə Et ➕', 'https://t.me/FlackResmi?startgroup=a').
+                       Button.url('🧑‍💻 Sahibim', 'https://t.me/Eyoydu')]
                     ),
                     link_preview=False
                    )

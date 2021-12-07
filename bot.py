@@ -27,7 +27,7 @@ async def cancel(event):
 async def start(event):
   await event.reply("**@FlackTaggerBoT**, Qrupda və ya kanalda demək olar ki, istənilən üzvü qeyd edə bilərəm ★\nƏtraflı məlumat üçün **/help** üzərinə klikləyin.",
                     buttons=(
-                      [Button.url('➕ Məni Bir Qurupa Əlavə Et ➕', 'https://t.me/FlackTaggerBoT?startgroup=a'),
+                      [Button.url('➕ Məni Qurupa Əlavə Et ➕', 'https://t.me/FlackTaggerBoT?startgroup=a'),
                        Button.url('🧑‍💻 Sahibim', 'https://t.me/Eyoydu')]
                     ),
                     link_preview=False
@@ -37,7 +37,7 @@ async def help(event):
   helptext = "** FlackTaggerBoT Yardım Menyu**\n\nƏmr: /tag \n Bu emri başqalarına söylemek istediyiniz metnle birlikdw istifade ede bilersiniz.  \n`Nümune: /tag sabahınız xeyir!` \nBu emrden cavab olaraq istifade ede bilərsiniz.  istənilən mesaj Bot istifadəçiləri cavablandırılan mesaja tag edecek /dayan- bu emrle prosesi dayandıra bilərsiniz @piramidasohbet Söhbet Kanalımıza gelmeyi unutmayın"
   await event.reply(helptext,
                     buttons=(
-                      [Button.url('➕ Məni Bir Qurupa Əlavə Et ➕', 'https://t.me/FlackResmi?startgroup=a').
+                      [Button.url('➕ Məni Qurupa Əlavə Et ➕', 'https://t.me/FlackResmi?startgroup=a').
                        Button.url('🧑‍💻 Sahibim', 'https://t.me/Eyoydu')]
                     ),
                     link_preview=False
@@ -75,7 +75,7 @@ async def mentionall(event):
       usrnum += 1
       usrtxt += f"[{usr.first_name}](tg://user?id={usr.id}) "
       if event.chat_id not in anlik_calisan:
-        await event.respond("Tag Prosesi Ugurlu bir şəkilde  Dayandirildi❌")
+        await event.respond("Tağ Prosesi Uğurlu bir şəkilde  Dayandırıldı ✅")
         return
       if usrnum == 5:
         await client.send_message(event.chat_id, f"{usrtxt}\n\n{msg}")
@@ -93,7 +93,7 @@ async def mentionall(event):
       usrnum += 1
       usrtxt += f"[{usr.first_name}](tg://user?id={usr.id}) "
       if event.chat_id not in anlik_calisan:
-        await event.respond("Tag Prosesi Ugurla Dayandirildi ❌")
+        await event.respond("Tağ Prosesi Uğurla Dayandirildi ✅")
         return
       if usrnum == 5:
         await client.send_message(event.chat_id, usrtxt, reply_to=msg)
@@ -101,5 +101,5 @@ async def mentionall(event):
         usrnum = 0
         usrtxt = ""
 
-print(">> Bot isdeyir merak eleme 🚀 @Roxy_Boss Informasia Ala bilersiz <<")
+print(">> Flack Tagger BoT işləyir 🚀 @Eyoydu dan informasia Ala bilərsiz <<")
 client.run_until_disconnected()

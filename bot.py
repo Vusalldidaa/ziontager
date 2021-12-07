@@ -25,21 +25,21 @@ async def cancel(event):
 
 @client.on(events.NewMessage(pattern="^/start$"))
 async def start(event):
-  await event.reply("**Rc Tag Bot**, Qrupda və ya kanalda demək olar ki, istənilən üzvü qeyd edə bilərəm ★\nƏtraflı məlumat üçün **/help** üzərinə klikləyin.",
+  await event.reply("**@FlackTaggerBoT**, Qrupda və ya kanalda demək olar ki, istənilən üzvü qeyd edə bilərəm ★\nƏtraflı məlumat üçün **/help** üzərinə klikləyin.",
                     buttons=(
-                      [Button.url('🌟 Meni Bir Gruba Ekle', 'https://t.me/RcTag_Bot?startgroup=a'),
-                      Button.url('📣 Sohbet Qrupumuz', 'https://t.me/OSCAR_sohbet'),
+                      [Button.url('🌟 Meni Bir Gruba Ekle', 'https://t.me/FlackTaggerBoT?startgroup=a'),
+                      Button.url('📣 Support', 'https://t.me/@FlackResmi'),
                       Button.url('🧑‍💻 Sahibim', 'https://t.me/Roxy_Boss')]
                     ),
                     link_preview=False
                    )
 @client.on(events.NewMessage(pattern="^/help$"))
 async def help(event):
-  helptext = "**Rc Tag botunun Yardım Menyu**\n\nƏmr: /tag \n Bu emri başqalarına söylemek istediyiniz metnle birlikdw istifade ede bilersiniz.  \n`Nümune: /tag sabahınız xeyir!` \nBu emrden cavab olaraq istifade ede bilərsiniz.  istənilən mesaj Bot istifadəçiləri cavablandırılan mesaja tag edecek /dayan- bu emrle prosesi dayandıra bilərsiniz @piramidasohbet Söhbet Kanalımıza gelmeyi unutmayın"
+  helptext = "** FlackTaggerBoT Yardım Menyu**\n\nƏmr: /tag \n Bu emri başqalarına söylemek istediyiniz metnle birlikdw istifade ede bilersiniz.  \n`Nümune: /tag sabahınız xeyir!` \nBu emrden cavab olaraq istifade ede bilərsiniz.  istənilən mesaj Bot istifadəçiləri cavablandırılan mesaja tag edecek /dayan- bu emrle prosesi dayandıra bilərsiniz @piramidasohbet Söhbet Kanalımıza gelmeyi unutmayın"
   await event.reply(helptext,
                     buttons=(
-                      [Button.url('🌟 Meni Bir Gruba Ekle', 'https://t.me/RcTag_Bot?startgroup=a'),
-                       Button.url('📣 Sohbet Qrupumuz', 'https://t.me/Piramidasohbet'),
+                      [Button.url('🌟 Meni Bir Gruba Ekle', 'https://t.me/FlackResmi?startgroup=a'),
+                       Button.url('📣 Support', 'https://t.me/FlackResmi'),
                       Button.url('🧑‍💻 Sahibim', 'https://t.me/Roxy_Boss')]
                     ),
                     link_preview=False
@@ -77,7 +77,7 @@ async def mentionall(event):
       usrnum += 1
       usrtxt += f"[{usr.first_name}](tg://user?id={usr.id}) "
       if event.chat_id not in anlik_calisan:
-        await event.respond("Tag Prosesi Ugurlj bir şəkilde  Dayandirildi❌")
+        await event.respond("Tag Prosesi Ugurlu bir şəkilde  Dayandirildi❌")
         return
       if usrnum == 5:
         await client.send_message(event.chat_id, f"{usrtxt}\n\n{msg}")

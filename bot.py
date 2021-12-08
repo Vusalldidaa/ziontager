@@ -25,7 +25,7 @@ async def cancel(event):
 
 @client.on(events.NewMessage(pattern="^/start$"))
 async def start(event):
-  await event.reply("**FlackTaggerBoT**, u qurupunuza əlavə edərək qurupunuzda kı istifadəçiləri daha sürətli çağıra bilərsiz ★\nDaha çox məlumat üçün **/help**'komutundan istifadə edin nə ya @FlackSup dan dəstək ala bilərsiz",
+  await event.reply("**FlackTaggerBoT**, u qurupunuza əlavə edərək qurupunuzda kı istifadəçiləri daha sürətli çağıra bilərsiz Daha çox məlumat üçün **/help**komutundan istifadə edin nə ya @FlackSup dan dəstək ala bilərsiz",
                     buttons=(
                       [Button.url('➕ Məni Qurupa Əlavə Et ➕', 'https://t.me/flacktaggerbot?startgroup=a'),
                       Button.url('👨‍💻 Owner', 'https://t.me/Eyoydu')]
@@ -34,8 +34,7 @@ async def start(event):
                    )
 @client.on(events.NewMessage(pattern="^/help$"))
 async def help(event):
-  helptext = "**Loungetagger bot'un Yardım Menüsü**\n\nKomut: /all \n  Bu komutu, başkalarına bahsetmek istediğiniz metinle birlikte kullanabilirsiniz. \n`Örnek: /all Günaydın!`  \nBu komutu yanıt olarak kullanabilirsiniz. herhangi bir mesaj Bot, yanıtlanan iletiye kullanıcıları etiketleyecek"
-  await event.reply(helptext,
+  helptext = "**Flack Tagger BoT un kömək paneli**\n\nKomut: /all \n  Bu komut, Qurupda kı istifadəçiləri istediyiniz sözlə birliktə istifadə edə bilərsiz. \n`Misal: /all Salam!`  \nBu komutu yanıt olarağ istifadə edə bilərsiz. Hər hansısa bir masajı bota yönəldin, Qeyd - Tağ etmə prosesin ancağ (Yönəticilər) başlada bilər Dəstək Qurupu - @FlackSup await event.reply(helptext,
                     buttons=(
                       [Button.url('➕ Beni Bir Gruba Ekle', 'https://t.me/flacktaggerbot?startgroup=a'),
                       Button.url('👨‍ Owner', 'https://t.me/Eyoydu')]

@@ -25,23 +25,22 @@ async def cancel(event):
 
 @client.on(events.NewMessage(pattern="^/start$"))
 async def start(event):
-  await event.reply("**FlackTagger BoT**, Qurupunuzda və ya kanalınızda ki istifadəçiləri Tağ edə bilər ★\nDaha çox məlumat üçün **/help**'ə basarağ və ya @FlackSup qurupundan dəstək ala bilərsiz",
-                    buttons=(
-                      [Button.url('➕ Məni Qurupa Əlavə Et ➕', 'https://t.me/flacktaggerbot?startgroup=a'),                     
-                      Button.url('👨‍💻 Owner', 'https://t.me/Eyoydu')]
+  await event.reply("**FlackTagger Bot**, Qurup və ya kanaldaki istifadəçiləri çağıra bilmə özəlliyinə sahibdi ★\nDaha çox məlumat üçün **/help**'butonun a basın.",
+                      [Button.url('➕ Məni Qurupa Əlavə Et ➕', 'https://t.me/flacktaggerbot?startgroup=a'),
+                       Button.url('👨‍💻 Owner', 'https://t.me/Eyoydu')]
                     ),
                     link_preview=False
                    )
 @client.on(events.NewMessage(pattern="^/help$"))
 async def help(event):
-  helptext = "**Flacktagger BoT'un Kömək Menyusu**\n\nKomut: /all \n  Bu komutu, başqalarını çağırmaq istədiyiniz sözlə birlikdə istifadə edə bilərsiz. \n`Misal: /all Salam Necəsiz?`  \nBu komutu yanıt olarağ istifadə edə bilərsiz. Hər hansısa bir mesajı bota, yönəldərək istifadəçiləri tağ edə bilərsiz"
+  helptext = "**Flacktagger bot'un Kömək Menyusu**\n\nKomut: /all \n  Bu komutu, başqalarına yanıt verərkən istifadə edə bilərsiz. \n`Misal: /all Salam Qurup!`  \nBu komutu yanıt verərək istifadə edə bilərsiz. hərhansısa bir mesajı Bot, yanıtlanan mesajla istifadəçiləri tağ edəcək"
   await event.reply(helptext,
                     buttons=(
-                      [Button.url('➕ Məni Qurupa Əlavə Et ➕', 'https://t.me/flacktaggerbot?startgroup=a'),
-                      Button.url('👨‍💻 Owner', 'https://t.me/Eyoydu')]
+                       [Button.url('➕ Məni Qurupa Əlavə Et ➕', 'https://t.me/flacktaggerbot?startgroup=a'),
+                       Button.url('👨‍💻 Owner', 'https://t.me/Eyoydu')]
                     ),
                     link_preview=False
-                   )tifadəçiləri 
+                   )
 
 
 @client.on(events.NewMessage(pattern="^/all ?(.*)"))
@@ -63,9 +62,9 @@ async def mentionall(event):
     mode = "text_on_reply"
     msg = event.reply_to_msg_id
     if msg == None:
-        return await event.respond("__Əvvəl ki mesajlar üçün istifadəçiləri tağ edə bilmərəm! (qurupa əlavə etmədən əvvəl istifadə edilən sözlər)__")
+        return await event.respond("__Eski mesajlar için üyelerden bahsedemem! (gruba eklemeden önce gönderilen mesajlar))__")
   elif event.pattern_match.group(1) and event.reply_to_msg_id:
-    return await event.respond("__Mənə bir Mesaj yönəldin!__")
+    return await event.respond("__Bana bir argüman ver!__")
   else:
     return await event.respond("__Bir mesaja yanıt verin və ya Tağ ı nə sözlə başladmağ istədiyinizi yazın Problem olarsan @FlackSup a bildirə bilərsiz!__")
     
@@ -77,7 +76,7 @@ async def mentionall(event):
       usrnum += 1
       usrtxt += f"[{usr.first_name}](tg://user?id={usr.id}) "
       if event.chat_id not in anlik_calisan:
-        await event.respond("Tağ etmə prosesi uğurla dayandırıldı ✅")
+        await event.respond("Tağ prosesi Uğurlu bir şəkildə dayandırıldı✅")
         return
       if usrnum == 5:
         await client.send_message(event.chat_id, f"{usrtxt}\n\n{msg}")
@@ -95,7 +94,7 @@ async def mentionall(event):
       usrnum += 1
       usrtxt += f"[{usr.first_name}](tg://user?id={usr.id}) "
       if event.chat_id not in anlik_calisan:
-        await event.respond("Tağ etmə prosesi uğurla dayandırıldı ✅")
+        await event.respond("Tağ prosesi Uğurlu bir şəkildə dayandırıldı✅")
         return
       if usrnum == 5:
         await client.send_message(event.chat_id, usrtxt, reply_to=msg)
@@ -104,5 +103,5 @@ async def mentionall(event):
         usrtxt = ""
 
 
-print(">> Flack Tagger BoT işləyir 🚀 @FlackSup a botumuzda yaranan problemlərinizi bildirə bilərsiz <<")
+print(">>  Flack Tagger BoT işləyir 🚀 @FlackSup a botumuzda yaranan problemlərinizi bildirə bilərsiz <<")
 client.run_until_disconnected()

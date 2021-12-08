@@ -25,22 +25,23 @@ async def cancel(event):
 
 @client.on(events.NewMessage(pattern="^/start$"))
 async def start(event):
-  await event.reply("**FlackTaggerBoT**, u qurupunuza əlavə edərək qurupunuzda kı istifadəçiləri daha sürətli çağıra bilərsiz Daha çox məlumat üçün **/help**komutundan istifadə edin nə ya @FlackSup dan dəstək ala bilərsiz",
+  await event.reply("**FlackTagger BoT**, Qurupunuzda veə ya kanalınızda ki istifadəçiləri Tağ edə bilər ★\nDaha çox məlumat üçün **/help**'ə basarağ və ya @FlackSup qurupundan dəstək ala bilərsiz",
                     buttons=(
-                      [Button.url('➕ Məni Qurupa Əlavə Et ➕', 'https://t.me/flacktaggerbot?startgroup=a'),
+                      [Button.url('➕ Məni Qurupa Əlavə Et ➕', 'https://t.me/flacktaggerbot?startgroup=a'),                     
                       Button.url('👨‍💻 Owner', 'https://t.me/Eyoydu')]
                     ),
                     link_preview=False
                    )
 @client.on(events.NewMessage(pattern="^/help$"))
 async def help(event):
-  helptext = "**Flack Tagger BoT un kömək paneli**\n\nKomut: /all \n  Bu komut, Qurupda kı istifadəçiləri istediyiniz sözlə birliktə istifadə edə bilərsiz. \n`Misal: /all Salam!`  \nBu komutu yanıt olarağ istifadə edə bilərsiz. Hər hansısa bir masajı bota yönəldin, Qeyd - Tağ etmə prosesin ancağ (Yönəticilər) başlada bilər Dəstək Qurupu - @FlackSup await event.reply(helptext,
+  helptext = "**FlackTagger BoT'un Kömək Menyusu**\n\nKomut: /all \n  Bu komutu, başqalarını çağırmaq istədiyiniz sözlə birlikdə istifadə edə bilərsiz. \n`Misal: /all Salam Necəsiz?`  \nBu komutu yanıt olarağ istifadə edə bilərsiz. Hər hansısa bir mesajı bota, yönəldərək istifadəçiləri tağ edə bilərsiz"
+  await event.reply(helptext,
                     buttons=(
-                      [Button.url('➕ Beni Bir Gruba Ekle', 'https://t.me/flacktaggerbot?startgroup=a'),
-                      Button.url('👨‍ Owner', 'https://t.me/Eyoydu')]
+                      [Button.url('➕ Məni Qurupa Əlavə Et ➕', 'https://t.me/flacktaggerbot?startgroup=a'),
+                      Button.url('👨‍💻 Owner', 'https://t.me/Eyoydu')]
                     ),
                     link_preview=False
-                   )
+                   )tifadəçiləri 
 
 
 @client.on(events.NewMessage(pattern="^/all ?(.*)"))
@@ -62,9 +63,9 @@ async def mentionall(event):
     mode = "text_on_reply"
     msg = event.reply_to_msg_id
     if msg == None:
-        return await event.respond("__Eski mesajlar için üyelerden bahsedemem! (gruba eklemeden önce gönderilen mesajlar)__")
+        return await event.respond("__Əvvəl ki mesajlar üçün istifadəçiləri tağ edə bilmərəm! (qurupa əlavə etmədən əvvəl istifadə edilən sözlər)__")
   elif event.pattern_match.group(1) and event.reply_to_msg_id:
-    return await event.respond("__Bana bir argüman ver!__")
+    return await event.respond("__Mənə bir Mesaj yönəldin!__")
   else:
     return await event.respond("__Bir mesaja yanıt verin və ya Tağ ı nə sözlə başladmağ istədiyinizi yazın Problem olarsan @FlackSup a bildirə bilərsiz!__")
     
@@ -76,7 +77,7 @@ async def mentionall(event):
       usrnum += 1
       usrtxt += f"[{usr.first_name}](tg://user?id={usr.id}) "
       if event.chat_id not in anlik_calisan:
-        await event.respond("İşlem Başarılı Bir Şekilde Durduruldu ✅")
+        await event.respond("Tağ etmə prosesi uğurla dayandırıldı ✅")
         return
       if usrnum == 5:
         await client.send_message(event.chat_id, f"{usrtxt}\n\n{msg}")
@@ -94,7 +95,7 @@ async def mentionall(event):
       usrnum += 1
       usrtxt += f"[{usr.first_name}](tg://user?id={usr.id}) "
       if event.chat_id not in anlik_calisan:
-        await event.respond("İşlem Başarılı Bir Şekilde Durduruldu ✅")
+        await event.respond("Tağ etmə prosesi uğurla dayandırıldı ✅")
         return
       if usrnum == 5:
         await client.send_message(event.chat_id, usrtxt, reply_to=msg)

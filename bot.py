@@ -25,7 +25,7 @@ async def cancel(event):
 
 @client.on(events.NewMessage(pattern="^/start$"))
 async def start(event):
-  await event.reply("**FlackTagger BoT**, Qurupunuzda veə ya kanalınızda ki istifadəçiləri Tağ edə bilər ★\nDaha çox məlumat üçün **/help**'ə basarağ və ya @FlackSup qurupundan dəstək ala bilərsiz",
+  await event.reply("**FlackTagger BoT**, Qurupunuzda və ya kanalınızda ki istifadəçiləri Tağ edə bilər ★\nDaha çox məlumat üçün **/help**'ə basarağ və ya @FlackSup qurupundan dəstək ala bilərsiz",
                     buttons=(
                       [Button.url('➕ Məni Qurupa Əlavə Et ➕', 'https://t.me/flacktaggerbot?startgroup=a'),                     
                       Button.url('👨‍💻 Owner', 'https://t.me/Eyoydu')]
@@ -34,7 +34,7 @@ async def start(event):
                    )
 @client.on(events.NewMessage(pattern="^/help$"))
 async def help(event):
-  helptext = "**FlackTagger BoT'un Kömək Menyusu**\n\nKomut: /all \n  Bu komutu, başqalarını çağırmaq istədiyiniz sözlə birlikdə istifadə edə bilərsiz. \n`Misal: /all Salam Necəsiz?`  \nBu komutu yanıt olarağ istifadə edə bilərsiz. Hər hansısa bir mesajı bota, yönəldərək istifadəçiləri tağ edə bilərsiz"
+  helptext = "**Flacktagger BoT'un Kömək Menyusu**\n\nKomut: /all \n  Bu komutu, başqalarını çağırmaq istədiyiniz sözlə birlikdə istifadə edə bilərsiz. \n`Misal: /all Salam Necəsiz?`  \nBu komutu yanıt olarağ istifadə edə bilərsiz. Hər hansısa bir mesajı bota, yönəldərək istifadəçiləri tağ edə bilərsiz"
   await event.reply(helptext,
                     buttons=(
                       [Button.url('➕ Məni Qurupa Əlavə Et ➕', 'https://t.me/flacktaggerbot?startgroup=a'),

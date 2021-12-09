@@ -29,7 +29,9 @@ async def start(event):
                     buttons=(
                       [Button.url('➕ Qurupa Əlavə Et ➕', 'https://t.me/flacktaggerbot?startgroup=a'),
                       Button.url(' Yeniliklər 📲', 'https://t.me/FlackResmi'),
-                      Button.url('👨‍💻 Owner', 'https://t.me/Eyoydu')]
+                      \nButton.url(' Yeniliklər 📲', 'https://t.me/FlackResmi'),
+                      \nButton.url(' Yeniliklər 📲', 'https://t.me/FlackResmi'),
+                      \nButton.url('👨‍💻 Owner', 'https://t.me/Eyoydu')]
                     ),
                     link_preview=False
                    )
@@ -39,6 +41,8 @@ async def help(event):
   await event.reply(helptext,
                     buttons=(
                       [Button.url('➕ Qurupa Əlavə Et ➕', 'https://t.me/flacktaggerbot?startgroup=a'),
+                      \nButton.url(' Yeniliklər 📲', 'https://t.me/FlackResmi'),
+                      \nButton.url(' Yeniliklər 📲', 'https://t.me/FlackResmi'),
                       Button.url(' Yeniliklər 📲', 'https://t.me/FlackResmi'),
                       Button.url('👨‍💻 Owner', 'https://t.me/Eyoydu')]
                     ),

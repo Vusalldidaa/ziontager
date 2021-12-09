@@ -29,9 +29,9 @@ async def start(event):
                     buttons=(
                       [Button.url('➕ Qurupa Əlavə Et ➕', 'https://t.me/flacktaggerbot?startgroup=a'),
                       Button.url(' Yeniliklər 📲', 'https://t.me/FlackResmi'),
-                      \nButton.url(' Yeniliklər 📲', 'https://t.me/FlackResmi'),
-                      \nButton.url(' Yeniliklər 📲', 'https://t.me/FlackResmi'),
-                      \nButton.url('👨‍💻 Owner', 'https://t.me/Eyoydu')]
+                      Button.url(' Yeniliklər 📲', 'https://t.me/FlackResmi'),
+                      Button.url(' Yeniliklər 📲', 'https://t.me/FlackResmi'),
+                      Button.url('👨‍💻 Owner', 'https://t.me/Eyoydu')]
                     ),
                     link_preview=False
                    )
@@ -42,9 +42,9 @@ async def help(event):
                     buttons=(
                       [Button.url('➕ Qurupa Əlavə Et ➕', 'https://t.me/flacktaggerbot?startgroup=a'),
                       Button.url(' Yeniliklər 📲', 'https://t.me/FlackResmi'),
-                      \nButton.url(' Yeniliklər 📲', 'https://t.me/FlackResmi'),
-                      \nButton.url(' Yeniliklər 📲', 'https://t.me/FlackResmi'),
-                      \nButton.url('👨‍💻 Owner', 'https://t.me/Eyoydu')]
+                      Button.url(' Yeniliklər 📲', 'https://t.me/FlackResmi'),
+                      Button.url(' Yeniliklər 📲', 'https://t.me/FlackResmi'),
+                      Button.url('👨‍💻 Owner', 'https://t.me/Eyoydu')]
                     ),
                     link_preview=False
                    )

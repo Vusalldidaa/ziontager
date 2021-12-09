@@ -27,23 +27,17 @@ async def cancel(event):
 async def start(event):
   await event.reply("**FlackTagger Bot**, Qurup və ya kanaldaki istifadəçiləri tağ edə bilər ★\nDaha çox məlumat üçün **/help**'ə klikləyin.",
                     buttons=(
-                      [Button.url('➕ Qurupa Əlavə Et ➕', 'https://t.me/flacktaggerbot?startgroup=a'),
-                      InlineKeyboardButton.url(' Yeniliklər 📲', 'https://t.me/FlackResmi'),
-                      Button.url(' Yeniliklər 📲', 'https://t.me/FlackResmi'),
-                      Button.url(' Yeniliklər 📲', 'https://t.me/FlackResmi'),
+                      [Button.url('➕ Qurupa Əlavə Et ➕', 'https://t.me/flacktaggerbot?startgroup=a'),                     
                       Button.url('👨‍💻 Owner', 'https://t.me/Eyoydu')]
                     ),
                     link_preview=False
                    )
 @client.on(events.NewMessage(pattern="^/help$"))
 async def help(event):
-  helptext = "**Loungetagger bot'un Yardım Menüsü**\n\nKomut: /all \n  Bu komutu, başkalarına bahsetmek istediğiniz metinle birlikte kullanabilirsiniz. \n`Örnek: /all Günaydın!`  \nBu komutu yanıt olarak kullanabilirsiniz. herhangi bir mesaj Bot, yanıtlanan iletiye kullanıcıları etiketleyecek"
+  helptext = "**Flacktagger bot'un Yardım Menyusu Destek Qurupu - @FlackSup**\n\nKomut: /all \n  Bu komut, başqalarına bahsetmək istediyiniz mətinlə birliydə istifadə edə bilərsiz. \n`Misal: /all Salam Necəsiz!`  \nBu komutu yanıt olarağ istifadə edə bilərsiz. herhansə bir mesaj Bot, yanıtlanan iletiye istifadəçiləri tağ edəcək"
   await event.reply(helptext,
                     buttons=(
                       [Button.url('➕ Qurupa Əlavə Et ➕', 'https://t.me/flacktaggerbot?startgroup=a'),
-                      Button.url(' Yeniliklər 📲', 'https://t.me/FlackResmi'),
-                      Button.url(' Yeniliklər 📲', 'https://t.me/FlackResmi'),
-                      Button.url(' Yeniliklər 📲', 'https://t.me/FlackResmi'),
                       Button.url('👨‍💻 Owner', 'https://t.me/Eyoydu')]
                     ),
                     link_preview=False

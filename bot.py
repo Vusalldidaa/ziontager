@@ -28,7 +28,7 @@ async def start(event):
   await event.reply("**FlackTagger Bot**, Qurup və ya kanaldaki istifadəçiləri tağ edə bilər ★\nDaha çox məlumat üçün **/help**'ə klikləyin.",
                     buttons=(
                       [Button.url('➕ Qurupa Əlavə Et ➕', 'https://t.me/flacktaggerbot?startgroup=a'),
-                      Button.url(' Yeniliklər 📲', 'https://t.me/FlackResmi'),
+                      InlineKeyboardButton.url(' Yeniliklər 📲', 'https://t.me/FlackResmi'),
                       Button.url(' Yeniliklər 📲', 'https://t.me/FlackResmi'),
                       Button.url(' Yeniliklər 📲', 'https://t.me/FlackResmi'),
                       Button.url('👨‍💻 Owner', 'https://t.me/Eyoydu')]

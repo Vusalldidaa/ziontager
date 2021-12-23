@@ -75,7 +75,7 @@ async def mentionall(event):
     usrtxt = ""
     async for usr in client.iter_participants(event.chat_id):
       usrnum += 1
-      usrtxt += f"[{usr.first_name}](tg://user?id={✨🎉🎆🎄🎊⛄☃️☃️❄🌨🏙🏔🏂⛷🧑‍🎄🤶🎅}) "
+      usrtxt += f"[{usr.first_name}](tg://user?id={🎉🎄🎊⛄☃️☃️❄🌨🏔🏂⛷🧑‍🎄🤶🎅}) "
       if event.chat_id not in anlik_calisan:
         await event.respond("Tağ prosesi uğurlu bir vəzyətdə dayandırldı 🎅")
         return

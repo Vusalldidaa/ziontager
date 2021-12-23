@@ -28,7 +28,7 @@ async def start(event):
   await event.reply("**❄ FlackTaggerBoT ❄**, Qurup və ya kanaldaki istifadəçiləri tağ edə bilər Daha çox məlumat üçün **/help**. butonundan istifadə edin ☃.\nYeni İliniz Mübarək @FlackResmi 🎅",
                     buttons=(
                       [Button.url('➕ Qurupa Əlavə Et ➕', 'https://t.me/flacktaggerbot?startgroup=a'),                     
-                      Button.url('🎅 Owner', 'https://t.me/Eyoydu')]
+                      Button.url('🎅 Owner', 'https://t.me/Kamrandida')]
                     ),
                     link_preview=False
                    )
@@ -38,7 +38,7 @@ async def help(event):
   await event.reply(helptext,
                     buttons=(
                       [Button.url('➕ Qurupa Əlavə Et ➕', 'https://t.me/flacktaggerbot?startgroup=a'),
-                      Button.url('👨‍💻 Owner', 'https://t.me/Eyoydu')]
+                      Button.url('👨‍💻 Owner', 'https://t.me/Kamrandida')]
                     ),
                     link_preview=False
                    )
@@ -75,7 +75,7 @@ async def mentionall(event):
     usrtxt = ""
     async for usr in client.iter_participants(event.chat_id):
       usrnum += 1
-      usrtxt += f"[{usr.first_name}](tg://user?id={⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡}) "
+      usrtxt += f"[{usr.first_name}](tg://user?id={✨🎉🎆🎄🎊⛄☃️☃️❄🌨🏙🏔🏂⛷🧑‍🎄🤶🎅}) "
       if event.chat_id not in anlik_calisan:
         await event.respond("Tağ prosesi uğurlu bir vəzyətdə dayandırldı 🎅")
         return

@@ -27,8 +27,8 @@ async def cancel(event):
 async def start(event):
   await event.reply("**❄ FlackTaggerBoT ❄**, Qurup və ya kanaldaki istifadəçiləri tağ edə bilər Daha çox məlumat üçün **/help**. butonundan istifadə edin ☃.\nYeni İliniz Mübarək @FlackResmi 🎅",
                     buttons=(
-                      [Button.url('➕ Qurupa Əlavə Et ➕', 'https://t.me/flacktaggerbot?startgroup=a'),                     
-                      Button.url('🎅 Owner', 'https://t.me/Kamrandida')]
+                      [Button.url('➕ Qurupa Əlavə Et ➕', 'http://t.me/TaggerAzeBot?startgroup=a'),                     
+                      Button.url('🎅 Owner', 'https://t.me/developerbyuu')]
                     ),
                     link_preview=False
                    )

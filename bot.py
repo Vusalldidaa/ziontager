@@ -12,7 +12,7 @@ LOGGER = logging.getLogger(__name__)
 
 api_id = int(os.environ.get("APP_ID"))
 api_hash = os.environ.get("API_HASH")
-bot_token = os.environ.get("TOKEN")
+bot_token = os.environ.get("5060190287:AAFS_hsg5PPkDlG31y6AKhSYg8IwnwSUR14")
 client = TelegramClient('client', api_id, api_hash).start(bot_token=bot_token)
 
 anlik_calisan = []
@@ -27,8 +27,8 @@ async def cancel(event):
 async def start(event):
   await event.reply("**Rc Tag Bot**, Qrupda və ya kanalda demək olar ki, istənilən üzvü qeyd edə bilərəm ★\nƏtraflı məlumat üçün **/help** üzərinə klikləyin.",
                     buttons=(
-                      [Button.url('🌟 Meni Bir Gruba Ekle', 'https://t.me/RcTag_Bot?startgroup=a'),
-                      Button.url('📣 Sohbet Qrupumuz', 'https://t.me/OSCAR_sohbet'),
+                      [Button.url('🌟 Meni Bir Gruba Ekle', 'http://t.me/TaggerAzeBot?startgroup=a'),
+                      Button.url('📣 Sohbet Qrupumuz', 'https://t.me/SohbetQurupuAzTr'),
                       Button.url('🧑‍💻 Sahibim', 'https://t.me/Vusalldidaa')]
                     ),
                     link_preview=False

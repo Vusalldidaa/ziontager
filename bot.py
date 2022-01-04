@@ -27,9 +27,9 @@ async def cancel(event):
 async def start(event):
   await event.reply("**Rc Tag Bot**, Qrupda və ya kanalda demək olar ki, istənilən üzvü qeyd edə bilərəm ★\nƏtraflı məlumat üçün **/help** üzərinə klikləyin.",
                     buttons=(
-                      [Button.url('🌟 Meni Bir Gruba Ekle', 'http://t.me/TaggerAzeBot?startgroup=a'),
-                      Button.url('📣 Sohbet Qrupumuz', 'https://t.me/SohbetQurupuAzTr'),
-                      Button.url('🧑‍💻 Sahibim', 'https://t.me/Vusalldidaa')]
+                      [Button.url('🌟 Meni Bir Gruba Ekle', 'http://t.me/TaggerAzeRoBot?startgroup=a'),
+                      Button.url('📣 Sohbet Qrupumuz', 'https://t.me/TheLeonChat'),
+                      Button.url('🧑‍💻 Sahibim', 'https://t.me/slmbenvusal')]
                     ),
                     link_preview=False
                    )

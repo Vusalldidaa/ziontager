@@ -1,10 +1,10 @@
-# Lounge All Bot
-_**Bu bot, gruplarda 10.000'e kadar üyeden bahsedebilir ve kanallarda 200'e kadar üyeden bahsedebilir. !**_
+# Taggee Aze Bot
+_**Bu bot qruplarda 10.000-ə qədər, kanallarda isə 200-ə qədər üzvü qeyd edə bilər. !**_
 
-### 🏷 Bilgi
+### 🏷 Məlumat
 - Dil: Python.
-- Telgraf Kütüphanesi: Telethon.
-- yakında javascript surumu gelcektir
+- Telegram Kitabxanası: Telemarafon.
+- javascript versiyası tezliklə
 
 ### 🚀 Deploy to heroku
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/bodrumlubebek/loungetagger)
